@@ -83,6 +83,7 @@
                 android:layout_height="match_parent">
 
                 <ImageView
+                    android:id="@+id/recycle_view_profile_image_id"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:contentDescription="@drawable/brooke_cagle_otweoxmkdka_unsplash"
@@ -97,7 +98,7 @@
         </androidx.cardview.widget.CardView>
 
         <TextView
-            android:id="@+id/activity2NamesId"
+            android:id="@+id/recycle_view_profile_name_id"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"

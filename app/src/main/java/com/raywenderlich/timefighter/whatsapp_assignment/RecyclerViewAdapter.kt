@@ -15,7 +15,7 @@ class RecyclerViewAdapter(
     inner class ClassViewHolder(itemsView:View):RecyclerView.ViewHolder(itemsView),
         View.OnClickListener{
         private val profileImageInstance:ImageView = itemsView.findViewById(R.id.recycle_view_profile_image_id)
-        private val profileNameInstance:TextView = itemsView.findViewById(R.id.recycleview_profile_name_id)
+        private val profileNameInstance:TextView = itemsView.findViewById(R.id.recycle_view_profile_name_id)
 
         fun bindingFunction(profile: Profile){
             profileImageInstance.setImageResource(profile.profileImage)
