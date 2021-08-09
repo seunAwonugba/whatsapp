@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import androidx.core.app.ActivityOptionsCompat as AppActivityOptionsCompat
 
 class MainActivity : AppCompatActivity(), RecyclerViewAdapter.OnItemClickListener {
 
@@ -21,6 +22,7 @@ class MainActivity : AppCompatActivity(), RecyclerViewAdapter.OnItemClickListene
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 //        instanceOfBackArrow = findViewById(R.id.backArrowId)
+        setTitle("Activity1")
 
 
         fullProfile = listOf(
@@ -59,7 +61,6 @@ class MainActivity : AppCompatActivity(), RecyclerViewAdapter.OnItemClickListene
         intent.putExtra("putExtraProfileName", fullProfile[position].profileName)
         intent.putExtra("putExtraProfilePhoneNumber", fullProfile[position].profilePhoneNumber)
         intent.putExtra("putExtraProfileEmail", fullProfile[position].profileEmail)
-
         startActivity(intent)
     }
 }

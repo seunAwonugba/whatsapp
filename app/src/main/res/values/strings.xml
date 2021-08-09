@@ -6,4 +6,6 @@
     <string name="contacts">Contacts</string>
     <string name="contactNames">Awonugba Seun</string>
     <string name="mobile">Mobile</string>
+    <string name="menuEdit">Edit</string>
+    <string name="menuDelete">Delete</string>
 </resources>

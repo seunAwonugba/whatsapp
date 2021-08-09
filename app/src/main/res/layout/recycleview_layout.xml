@@ -30,7 +30,8 @@
                 android:layout_height="match_parent"
                 android:contentDescription="@drawable/brooke_cagle_otweoxmkdka_unsplash"
                 android:scaleType="centerCrop"
-                android:src="@drawable/brooke_cagle_otweoxmkdka_unsplash">
+                android:src="@drawable/brooke_cagle_otweoxmkdka_unsplash"
+                android:transitionName="image_transition">
 
             </ImageView>
         </androidx.cardview.widget.CardView>
@@ -41,10 +42,24 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="@string/contactNames"
-            android:textSize="20sp"
             android:textColor="@color/black"
+            android:textSize="20sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/cardView"
             app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/itemMenuId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
+            android:text="&#8942;"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

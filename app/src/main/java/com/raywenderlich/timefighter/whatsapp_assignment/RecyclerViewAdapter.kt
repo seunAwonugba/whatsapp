@@ -1,5 +1,6 @@
 package com.raywenderlich.timefighter.whatsapp_assignment
 
+import android.provider.ContactsContract
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -12,8 +13,7 @@ class RecyclerViewAdapter(
     private val listener: OnItemClickListener
     ):
     RecyclerView.Adapter<RecyclerViewAdapter.ClassViewHolder>() {
-    inner class ClassViewHolder(itemsView:View):RecyclerView.ViewHolder(itemsView),
-        View.OnClickListener{
+    inner class ClassViewHolder(itemsView:View):RecyclerView.ViewHolder(itemsView),View.OnClickListener{
         private val profileImageInstance:ImageView = itemsView.findViewById(R.id.recycle_view_profile_image_id)
         private val profileNameInstance:TextView = itemsView.findViewById(R.id.recycle_view_profile_name_id)
 
